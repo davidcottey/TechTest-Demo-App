@@ -38,4 +38,5 @@ steps:
     azureSubscription: 'DOG Tech Test Subscription - DC SPN'
     appType: 'webAppLinux'
     appName: 'appService-DC-Tech-Test'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    #package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(build.artifactStagingDirectory)/**/*.zip'
